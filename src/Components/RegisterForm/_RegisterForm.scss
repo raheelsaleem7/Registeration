@@ -1,0 +1,240 @@
+@import '../../assests/fonts/variable/variable';
+
+
+.register {
+    background-color: $appColor;
+    @media screen and (max-width:480px) {
+        align-items: center;
+        
+    }
+    .register_container {
+        .heading {
+            padding: 30px;
+            line-height: 73px;
+            .alpha_clr {
+
+                
+                background-image:linear-gradient(
+                    45deg, #60ffd8, #04022ff7);
+               background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-family: $titleName;
+            }
+                .register_clr {
+                    color: white;
+                    font-size: 28px;
+                    font-weight: 600;
+                    font-family: $registerText;
+            }
+        }
+
+        .register_content {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+
+             .form_name {
+                color: $fontColor;
+                display: table-cell;
+               
+             }
+             .input_data {
+                background: transparent;
+                margin: 6px 0 14px 0;
+                cursor: pointer;
+                color: $placeHolder;
+                padding: 8px;
+                border-bottom: 2px solid $fontColor;
+                border-top: none;
+                border-left: none;
+                border-right:none ;
+                padding: 18px 5px;
+                width: 542px;
+                &:focus {
+                    border: none;
+                    outline: none;
+                    border-bottom: 2px solid $fontColor;
+                }
+                
+                &::placeholder {
+                    color: $placeHolder;
+                    opacity: .2;
+                }
+                @media screen and (max-width:480px) {
+                    width: 228px;
+
+                    
+                }
+             }
+        }
+               .register_opt {
+                display: inline-flex;
+                padding: 30px 1px;
+                color: $placeHolder;
+                @media screen and (max-width:480px) {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    align-items: center;
+                }
+               .checkbox_content {
+                line-height: 44px;
+                margin-right: 67px;
+                @media screen and (max-width:480px) {
+                      margin-right: 15px;
+                }
+                .label_clr {
+                           color: $placeHolder;
+                         font-family: ui-serif;
+                       }
+                 input[type = checkbox ] {
+                     appearance: none;
+                     &:checked:after {
+                        content: '';
+                        position: absolute;
+                        transform: translateX(10px) rotate(-45deg);
+                        transform-origin: left bottom;
+                        background: white;
+                        height: 3px;
+                        width: 15px;
+                    &::before {
+                        transform: translateX(10px) rotate(-45deg);
+                        transform-origin: left bottom;
+                        width: 3px;
+                        height: 15px;
+
+                    }
+                       
+                      }
+                    &::before {
+                        content:'';
+                      background-color: $checkColor;
+                      -webkit-appearance: none;                     
+                     width: 15px;
+                     height: 15px;
+                      border-radius:50%;
+                      display: inline-block;
+                      position: relative;
+                      vertical-align: middle;
+                      cursor: pointer;
+                      margin-right: 5px;
+                      transform: translateX(10px) rotate(-45deg);
+                      transform-origin: left bottom;
+                    
+                      &::after {
+                          content: "";
+                          color: white;
+                          display: block;
+                          font-size: 20px;
+                          background-color: $darkColor;
+                      
+                      }
+                    }
+                }
+        
+
+                  .checkbox_clr {
+                   
+                    cursor: pointer;
+                    
+
+                .label_clr {
+                    color: $placeHolder;
+                    font-family: ui-serif;
+                }
+                  }
+                .div_checkbox {
+                    display: -webkit-box;
+                  @media screen and (max-width:480px) {
+                       
+                  }  
+               }
+               }
+
+            }
+
+            .btn_content {
+                
+                .label_clr {
+                    color: $placeHolder;
+                    font-family: ui-serif;
+                }
+                input[type = checkbox ] {
+                    appearance: none;
+                     &:checked:after {
+                        content: '';
+                        position: absolute;
+                        transform: translateX(10px) rotate(-45deg);
+                        transform-origin: left bottom;
+                        background: white;
+                        height: 3px;
+                        width: 15px;
+                    &::before {
+                        transform: translateX(10px) rotate(-45deg);
+                        transform-origin: left bottom;
+                        width: 3px;
+                        height: 15px;
+
+                    }
+                       
+                      }
+                    &::before {
+                        content:'';
+                      background-color: $checkColor;
+                      -webkit-appearance: none;                     
+                     width: 15px;
+                     height: 15px;
+                      border-radius:50%;
+                      display: inline-block;
+                      position: relative;
+                      vertical-align: middle;
+                      cursor: pointer;
+                      margin-right: 5px;
+                      transform: translateX(10px) rotate(-45deg);
+                      transform-origin: left bottom;
+                    
+                      &::after {
+                          content: "";
+                          color: white;
+                          display: block;
+                          font-size: 20px;
+                          background-color: $darkColor;
+                      
+                      }
+                    }
+                }
+                .label_clr {
+                    color: $placeHolder;
+                    font-family: $checkText;
+                }
+                .btn_position {
+                    padding-top: 37px;
+                
+                .register_btn {
+                    border: none;
+                    outline: none;
+                    background: $darkColor;
+                    color: white;
+                    font-family: $registerText;
+                    padding: 19px 10px;
+                    width: 300px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    transition: .3s;
+                    &:hover {
+                      opacity: .8;
+                    }
+                }
+            }
+                     .description {
+                        padding-top: 28px;
+                        .account {
+                              color: white;
+                            .signup {
+                                color: $lightDark;
+                                text-decoration: underline;
+                            }
+                        }
+                     }
+       }  
+    }
+}
