@@ -46,27 +46,29 @@ function RegisterForm() {
                <div className='register_opt'>
 
                    <div className='checkbox_content'>
-                 <div>      
-               <input type="checkbox"  />
-               <label className='label_clr'> More than 8 characters</label>
-               </div>
+                 
+                   <div class="form-group">
+                   <input type="checkbox" id="css" />
+                  <label for="css">More than 8 characters</label>
+                  </div>
+               
 
-               <div className='div_checkbox'>
-               <input type="checkbox"  className='checkbox_clr'  />
-               <label  className='label_clr'> One Number</label>
-               </div>
-
+                  <div class="form-group">
+                   <input type="checkbox" id="html" />
+                  <label for="html">One number</label>
+                  </div>
+               
                
                  </div>
 
                  <div className='checkbox_content'>
-                 <div  className='div_checkbox'>
-               <input type="checkbox"  className='checkbox_clr'   />
-               <label  className='label_clr'> One Upper Case Letter</label>
+                 <div className='form-group'>
+               <input type="checkbox"   id="js"  />
+               <label  for="js"> One Upper Case Letter</label>
                  </div>
-                 <div className='div_checkbox'>
-               <input type="checkbox"  className='checkbox_clr'  />
-               <label  className='label_clr'> One Special Character</label>
+                 <div className='form-group'>
+               <input type="checkbox"  id="sass" />
+               <label for="sass"> One Special Character</label>
                </div>
                </div>
                </div>
@@ -74,9 +76,9 @@ function RegisterForm() {
               <div className='btn_content'>
              
              
-              <div>
-              <input type="checkbox"  />
-               <label  className='label_clr'> I accept the Terms & Condition.</label>
+              <div className='form-group'>
+              <input type="checkbox"  id="active"  />
+               <label  for="active"> I accept the Terms & Condition.</label>
               </div>
               
               <div className='btn_position'>
