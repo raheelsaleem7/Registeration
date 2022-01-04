@@ -1,0 +1,109 @@
+@import '../../assests/fonts/variable/variable';
+
+ .login {
+       
+    .login_container {
+        background-color: $appColor;
+        height: 100vh;
+        .forget_content {
+            padding-top: 30px;
+            .forget_h {
+                color: white;
+                font-size: 28px;
+                font-weight: 600;
+                font-family: $registerText;
+            }
+        }
+        .email_login {
+            display: flex;
+    flex-direction: column;
+        
+        .for_email {
+            display: inline-block;
+            padding-top: 52px;
+
+        
+        .form_name {
+            color: $fontColor;
+            display: table-cell;
+           
+         }
+         .div_input {
+                border-bottom: 2px solid $fontColor;
+                display: flex;
+                align-items: center;
+                &:focus {
+                    border-bottom: 2px solid white;
+                }
+         .input_data {
+            background: transparent;
+            margin: 6px 0 14px 0;
+            color: $placeHolder;
+            padding: 8px;
+            padding: 18px 25px;
+            width: 542px;
+            border: none;
+            font-size: 20px;
+            &:focus {
+                border: none;
+                outline: none;
+            }
+            
+            &::placeholder {
+                color: $placeHolder;
+                opacity: .2;
+                 font-size: 15px;
+            }
+            @media screen and (max-width:480px) {
+                width: 228px;
+
+            }
+            }
+         }
+        }
+        .forfit {
+          
+            text-align-last: right;
+            padding: 32px 0px;
+            .signup {
+                color: $lightDark;
+                cursor: pointer;
+                padding-top: 26px;
+                padding-right: 234px;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        }
+        .btn_position { 
+          
+       .register_btn {
+          border: none;
+          outline: none;
+          background: $darkColor;
+          color: white;
+          font-family: $registerText;
+          padding: 19px 10px;
+          width: 300px;
+          border-radius: 3px;
+          cursor: pointer;
+          transition: .3s;
+          &:hover {
+            opacity: .8;
+      }
+  }
+  }
+  .description {
+    padding-top: 28px;
+    .account {
+          color: white;
+        .signup {
+            color: $lightDark;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+ }
+    }
+ } 

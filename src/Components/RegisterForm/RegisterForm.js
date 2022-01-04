@@ -1,12 +1,14 @@
 import React from 'react'
+import Header from '../Header/Header'
 import './_RegisterForm.scss'
+import { Link } from 'react-router-dom';
 
 function RegisterForm() {
     return (
         <div className='register'>
             <div className='register_container'>
               <div className='heading'>
-              <h1 className='alpha_clr'>alphametrica</h1>
+             <Header />
               <p className='register_clr'>Registeration</p>
               </div>
                
@@ -82,7 +84,7 @@ function RegisterForm() {
               </div>
               
               <div className='btn_position'>
-                <button className='register_btn'>Register</button>
+              <Link to="/confirmation"><button className='register_btn'>Register</button></Link>
               </div>
 
               <div className='description'>

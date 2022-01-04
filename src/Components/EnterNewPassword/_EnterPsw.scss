@@ -1,0 +1,171 @@
+@import '../../assests/fonts/variable/variable';
+
+.enter_psw {
+      
+    .enter_container {
+        background-color: $appColor;
+        height:100vh;
+        .forget_content {
+            padding-top: 63px;
+            .forget_h {
+                color: white;
+                font-size: 28px;
+                font-weight: 600;
+                font-family: $registerText;
+            }
+        }
+        .for_email {
+            display: inline-block;
+            padding-top: 98px;
+        
+        .form_name {
+            color: $fontColor;
+            display: table-cell;
+           
+         }
+         .div_input {
+                border-bottom: 2px solid $fontColor;
+                display: flex;
+                align-items: center;
+                &:focus {
+                    border-bottom: 2px solid white;
+                }
+         .input_data {
+            background: transparent;
+            margin: 6px 0 14px 0;
+            color: $placeHolder;
+            padding: 8px;
+            padding: 18px 25px;
+            width: 542px;
+            border: none;
+            font-size: 20px;
+            -webkit-text-security: square;
+            &:focus {
+                border: none;
+                outline: none;
+            }
+            
+            &::placeholder {
+                color: $placeHolder;
+                opacity: .2;
+                 font-size: 15px;
+            }
+            @media screen and (max-width:480px) {
+                width: 228px;
+
+            }
+            }
+         }
+        }
+        .btn_position { 
+            padding-top: 120px;
+       .submit_email {
+          border: none;
+          outline: none;
+          background: $darkColor;
+          color: white;
+          font-family: $registerText;
+          padding: 19px 10px;
+          width: 300px;
+          border-radius: 3px;
+          cursor: pointer;
+          transition: .3s;
+          &:hover {
+            opacity: .8;
+      }
+  }
+  }
+         .approved {
+            height: 264px;
+            background-color: #36393e;
+            width: 354px;
+            border-radius: 16px;
+            position: relative;
+             bottom: 357px;
+
+            .approved_content {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 23px;
+                    .form-group {
+                        display: block;
+                        margin-bottom: 15px;
+                      }
+                      
+                      .form-group input {
+                        padding: 0;
+                        height: 37px;
+                        width: 90px;
+                        margin-bottom: 0;
+                        cursor: pointer;
+                      }
+                      
+                      .form-group label {
+                        position: relative;
+                        cursor: pointer;
+                        color: $placeHolder;
+                      }
+                      
+                      .form-group label:before {
+                        content:'';
+                        -webkit-appearance: none;
+                        background-color: white;
+                        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+                        display: inline-block;
+                        position: relative;
+                        vertical-align: middle;
+                        cursor: pointer;
+                        margin-right: 5px;
+                        width: 20px;
+                        height:20px;
+                        border-radius: 50%
+                         }
+                      
+                      .form-group input:checked + label:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 5px;
+                        left: 8px;
+                        width: 2px;
+                        height: 10px;
+                        border: solid white;
+                        border-width: 0 2px 2px 0;
+                        transform: rotate(45deg);
+    
+                      }
+            
+                    .forget_h {
+                        color: white;
+                        font-size: 15px;
+                        font-weight: 400;
+                        font-family: $registerText;
+                        padding: 35px;
+                    }
+                        .btn_position2 { 
+                            padding-top: 20px;
+                            .submit_email {
+                                border: none;
+                                outline: none;
+                                background: $darkColor;
+                                color: white;
+                                font-family: $registerText;
+                                padding: 19px 10px;
+                                width: 300px;
+                                border-radius: 3px;
+                                cursor: pointer;
+                                transition: .3s;
+                                &:hover {
+                                  opacity: .8;
+                            }
+                        }
+                    
+                }
+
+                .checkbox {
+
+                }
+            }
+         }
+    }
+}

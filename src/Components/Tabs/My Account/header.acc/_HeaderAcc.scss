@@ -1,0 +1,17 @@
+@import "../../../../assests/fonts/variable/variable";
+
+.header_acc {
+    background-color: $appColor;
+    .acc_container {
+       
+
+        .headerAcc_content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 82px;
+            box-shadow:5px 0px 49px -14px black;
+    
+        }
+    }
+}

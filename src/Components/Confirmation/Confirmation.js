@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from '../Header/Header'
 import './_Confirmation.scss'
 
 function Confirmation() {
@@ -7,7 +8,7 @@ function Confirmation() {
             <div className='confirmation_container'>
              
              <div className='heading2'>
-             <h1 className='alpha_clr'>alphametrica</h1>
+             <Header />
              </div>
              <div className='confirmtion_description'>
              <h2 className='confirm_h'>Confirmation code has been sent to your email</h2>

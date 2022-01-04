@@ -1,0 +1,56 @@
+@import '../../../../assests/fonts/variable/variable';
+
+.activity {
+
+    background-color: $appColor;
+    .activity_container {
+
+        .for_heading {
+            
+            .acc_h {
+                color: $accColor;
+            }
+        }
+        .activity_content {
+            display: flex;
+            flex-direction: column;
+        
+            .acc_h {
+                color: $accColor;
+            }
+             .investment {
+                display: inline-flex;
+                 align-items: center;
+                 justify-content: center;
+             
+            .icon {
+                background-color: $colgroup;
+                display: flex;
+                width: 70px;
+                height: 70px;
+                border-radius: 5px;
+            }
+            
+            .div_invest {
+                display: flex;
+
+            
+            .invest {
+                margin-left: 48px;
+                line-height: 39px;
+                text-align-last: justify;
+                .inner_text {
+                    color: white;
+                }
+                .inner_text1 {
+                    color: $placeHolder;
+                }
+                .inner_text2 {
+                    color: $dollarColor;
+                }
+            }
+            }
+        }
+    }
+      }
+    }

@@ -1,0 +1,68 @@
+@import '../../../assests/fonts/variable/variable';
+
+.my_acc {
+    background-color: $appColor;
+    .container_main {
+        display: flex;
+        padding: 25px 1px;
+    
+    .fc_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #2d3035;
+        box-shadow: 5px 0px 49px -14px black;
+        padding: 17px 2px;
+        border-radius: 14px;
+        height: 286px;
+        width: 196px;
+        justify-content: space-between;
+        @media screen and (max-width:480px) {
+            display: flex;
+            flex-direction: row;
+            height: 37px;
+            width: 329px;
+        }
+        .accounts {
+            cursor: pointer;
+           &:hover {
+               color:$accHover;
+           }
+        
+        .portfolio {
+            color: $placeHolder;
+        }
+    }
+}
+    .not-active{
+        display:none;
+    }
+    .active {
+        background-color: #0069B3;
+        color: white;
+        border-radius: 0 36px 36px 0;
+    }
+    .active-tab {
+        width: 28px;
+        height: 7px;
+        background-color: #f3d700;
+        display: inline-block;
+        border-radius: 37px;
+        padding: 0;
+        border-width: 0;
+        cursor:pointer;
+        transition:0.5s;
+    }
+    .not-active-tab {
+        transition: 0.5s;
+        cursor:pointer;
+        width: 8px;
+        height: 8px;
+        background-color: #bcbcbc;
+        display: inline-block;
+        border-radius: 50%;
+        padding: 0;
+        border-width: 0;
+    }
+}
+}

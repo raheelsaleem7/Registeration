@@ -1,0 +1,91 @@
+@import '../../assests/fonts/variable/variable';
+@import '../RegisterForm/RegisterForm';
+
+.forget  {
+           background-color: $appColor;
+          height: 100vh;
+    .forget_container {
+
+         .forget_content {
+            padding-top: 63px;
+         
+        .forget_description {
+
+            .forget_h {
+                color: white;
+                font-size: 28px;
+                font-weight: 600;
+                font-family: $registerText;
+            }
+        }
+         .confirm_psw {
+            padding-top: 35px;
+            .psw_description {
+                color: $placeHolder;
+                font-family: $descriptionText;
+                max-width: 282px;
+            }
+         }
+        }
+        .for_email {
+            display: inline-block;
+            padding-top: 98px;
+        
+        .form_name {
+            color: $fontColor;
+            display: table-cell;
+           
+         }
+         .div_input {
+                border-bottom: 2px solid $fontColor;
+                display: flex;
+                align-items: center;
+                &:focus {
+                    border-bottom: 2px solid white;
+                }
+         .input_data {
+            background: transparent;
+            margin: 6px 0 14px 0;
+            color: $placeHolder;
+            padding: 8px;
+            padding: 18px 25px;
+            width: 542px;
+            border: none;
+            &:focus {
+                border: none;
+                outline: none;
+               
+            }
+            
+            &::placeholder {
+                color: $placeHolder;
+                opacity: .2;
+               
+            }
+            @media screen and (max-width:480px) {
+                width: 228px;
+
+            }
+            }
+         }
+        }
+          .btn_position { 
+              padding-top: 120px;
+         .submit_email {
+            border: none;
+            outline: none;
+            background: $darkColor;
+            color: white;
+            font-family: $registerText;
+            padding: 19px 10px;
+            width: 300px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: .3s;
+            &:hover {
+              opacity: .8;
+        }
+    }
+    }
+    }
+}
