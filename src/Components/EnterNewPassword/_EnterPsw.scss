@@ -17,6 +17,7 @@
         .for_email {
             display: inline-block;
             padding-top: 98px;
+            font-family: $descriptionText;
         
         .form_name {
             color: $fontColor;
@@ -59,6 +60,9 @@
         }
         .btn_position { 
             padding-top: 120px;
+            @media screen and (max-width:480px) {
+                padding-top: 54px;
+            }
        .submit_email {
           border: none;
           outline: none;
@@ -76,6 +80,7 @@
   }
   }
          .approved {
+             display: none;
             height: 264px;
             background-color: #36393e;
             width: 354px;
@@ -137,9 +142,9 @@
             
                     .forget_h {
                         color: white;
-                        font-size: 15px;
+                        font-size: 14px;
                         font-weight: 400;
-                        font-family: $registerText;
+                        font-family: $descriptionText;
                         padding: 35px;
                     }
                         .btn_position2 { 

@@ -1,0 +1,60 @@
+@import '../../../../../assests/fonts/variable/variable';
+
+.main_portfolio {
+
+    .container_portfolio {
+        display: inline-flex;
+        background-color: $priceBack;
+        height: 89px;
+        width: 360px;
+        align-items: center;
+        border-radius: 4px;
+        .v { 
+            background-color: $colgroup;
+            width: 55px;
+            height: 49px;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+           
+            .for_v {
+                color: white;
+            }
+        }
+        .vug {
+
+        
+            .for_vug {
+                color: white;
+            
+            }
+            .for_share {
+              color: $placeHolder;
+            }
+        }
+        
+        
+        .price_content {
+            display: flex;
+            
+            .svg_up {
+                width: 15px;
+                fill: $dollarColor;
+            }
+            .price {
+            color: $dollarColor;
+                .unit {
+                    color: $dollarColor;
+                }
+            }
+        }
+            .price2 {
+                color: $lightColor;
+            .unit{
+                color: $lightColor;
+            }
+            }
+        
+        
+    }
+}

@@ -15,7 +15,7 @@ function Confirmation() {
               </div>
            
            <div className='confirm_text'>
-                <p className='confirm_p'>The code has been sent to yourmail@mail.com.</p>
+                <p className='confirm_p'>The code has been sent to yourmail@gmail.com.</p>
              <p className='confirm_p'>Please enter the code below.</p>
                </div>
 

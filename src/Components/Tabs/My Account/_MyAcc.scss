@@ -2,9 +2,16 @@
 
 .my_acc {
     background-color: $appColor;
+    height: 100vh;
     .container_main {
-        display: flex;
+        display: grid;
+        grid-template-columns: 50% 50%;
         padding: 25px 1px;
+        align-items: center;
+        @media screen and (max-width:480px) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
     
     .fc_container {
         display: flex;
@@ -22,13 +29,23 @@
             flex-direction: row;
             height: 37px;
             width: 329px;
+            margin-top: 17px;
         }
         .accounts {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             cursor: pointer;
+            @media screen and (max-width:480px) {
+                display: flex;
+                flex-direction: column;
+            }
            &:hover {
                color:$accHover;
            }
-        
+        .from_svg {
+        padding-right: 12px;
+        }
         .portfolio {
             color: $placeHolder;
         }

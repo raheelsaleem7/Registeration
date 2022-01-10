@@ -39,7 +39,7 @@ function Login() {
           
 
            <div className='btn_position'>
-                <button className='register_btn'>Register</button>
+                <button className='register_btn'>Login</button>
               </div>
 
               <div className='description'>

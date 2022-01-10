@@ -1,6 +1,4 @@
 import React from 'react'
-import HeaderAcc from '../header.acc/HeaderAcc'
-import FooterAcc from '../footer.acc/FooterAcc'
 import './_Activity.scss'
 
 function Activity() {
@@ -11,20 +9,32 @@ function Activity() {
             plus:"+",
             amount:"W4715",
             date:"Jan 1,2022",
+            isPositive: true,
+        },
+        {
+            heading:"Lorem ipsum",
+            para:"Buy",
+            plus:"-",
+            amount:"W4715",
+            date:"Feb 10,2022",
+            isPositive: false,
+        },
+        {
+          
+            heading:"Lorem ipsum",
+            para:"Withdrawl",
+            plus:"-",
+            amount:"W4715",
+            date:"Feb 9,2022",
+            isPositive: false,
         },
         {
             heading:"Investment Option",
-            para:"Sell",
+            para:"Deposit",
             plus:"+",
             amount:"W4715",
-            date:"Jan 1,2022",
-        },
-        {
-            heading:"Investment Option",
-            para:"Sell",
-            plus:"+",
-            amount:"W4715",
-            date:"Jan 1,2022",
+            date:"Feb 9,2022",
+            isPositive: true,
         }
 
     ]
@@ -36,10 +46,11 @@ function Activity() {
                 <h2 className='acc_h'>Activity</h2>
                </div>
 
-              <div className='activity_content'>
-               <div>
+               <div className='month'>
                    <span  className='acc_h'>January 2022</span>
                </div>
+              <div className='activity_content'>
+               
 
        {
            activity.map((Activity) => (
@@ -59,7 +70,7 @@ function Activity() {
                   <div className='invest'>
                   <div>
 
-                      <p className='inner_text2'>{Activity.plus} <span>{Activity.amount}</span></p>
+                      <p className={`${Activity.isPositive ? "inner_text2_green" : "inner_text2_negative"}`}>{Activity.plus} <span>{Activity.amount}</span></p>
                   </div>
                   <div>
                       <p className='inner_text1'>{Activity.date}</p>

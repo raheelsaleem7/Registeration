@@ -16,6 +16,7 @@
                 font-size: 28px;
                 font-weight: 600;
                 font-family: $registerText;
+                letter-spacing: 1px;
             }
         }
          .confirm_psw {
@@ -32,9 +33,9 @@
             padding-top: 98px;
         
         .form_name {
-            color: $fontColor;
+            color: $placeHolder;
             display: table-cell;
-           
+        
          }
          .div_input {
                 border-bottom: 2px solid $fontColor;
@@ -71,6 +72,9 @@
         }
           .btn_position { 
               padding-top: 120px;
+              @media screen and (max-width:480px) {
+                padding-top: 54px;
+            }
          .submit_email {
             border: none;
             outline: none;

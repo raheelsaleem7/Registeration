@@ -1,0 +1,53 @@
+@import '../../../../assests/fonts/variable/variable';
+
+.portfolio_div{
+    background-color: $appColor;
+    height: 100vh;
+
+    .portfolio_container {
+
+    }
+
+    .text_portfolio{
+        color: $placeHolder
+    }
+    .for_inline {
+        display: inline-flex;
+    
+    .nav_portfolio{
+
+        max-width: 67px;
+        margin-left: 35px;
+        
+        cursor: pointer;
+       
+        .for_svg {
+            background-color: #414347;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            &:hover {
+                background-color: $colgroup;
+            }
+        .svg { 
+           width: 20px;
+           fill: $placeHolder;
+
+           
+        }
+    }
+
+    .for_height {
+        line-height: 13px;
+    
+        .port_nav {
+            color: $placeHolder;
+            font-size: 12px;
+           
+        }
+    }
+}
+}
+}

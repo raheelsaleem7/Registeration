@@ -9,30 +9,47 @@
             
             .acc_h {
                 color: $accColor;
+                text-align-last: left;
             }
         }
+        .month {
+            text-align-last: left;
+        .acc_h {
+            color: $accColor;
+            text-align-last: left;
+        }
+    }
         .activity_content {
             display: flex;
             flex-direction: column;
+
         
-            .acc_h {
-                color: $accColor;
-            }
+            
              .investment {
-                display: inline-flex;
+                display:flex;
                  align-items: center;
                  justify-content: center;
+                 padding-top: 12px;
+                 position: relative;
+                 border-bottom: 2px solid;
              
             .icon {
                 background-color: $colgroup;
                 display: flex;
-                width: 70px;
-                height: 70px;
+                width: 50px;
+                height: 50px;
                 border-radius: 5px;
+               
             }
             
             .div_invest {
+               
+                width: 357px;
+                height: 96px;
                 display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 6px;
 
             
             .invest {
@@ -41,13 +58,20 @@
                 text-align-last: justify;
                 .inner_text {
                     color: white;
+                    font-family: "emoji";
                 }
                 .inner_text1 {
                     color: $placeHolder;
                 }
-                .inner_text2 {
+                .inner_text2_green {
                     color: $dollarColor;
                 }
+                .inner_text2_negative {
+                   color: $falseColor;
+                }
+    
+                   
+                    
             }
             }
         }
